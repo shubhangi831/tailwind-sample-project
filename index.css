@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#menu-btn,#close-btn{
+    @apply hidden;
+}
+header{
+    height: 100vh;
+    width: 100%;
+}
+.menu-btn{
+    @apply absolute right-0 text-3xl lg:hidden;
+}
+.close-btn{
+    @apply absolute right-0 top-0 text-3xl lg:hidden;
+}
+.wrappernav{
+ @apply  bg-white lg:bg-blue-500 absolute w-[400px] top-0 bottom-0 hidden lg:block  lg:w-[100%] lg:h-[50px] ;
+}
+#menu-primary
+{
+    @apply flex flex-col mt-[50px] gap-[50px] ml-[20px] text-2xl lg:flex-row lg:mt-2 lg:ml-0 lg:justify-center;
+} 
+#menu-primary > li > ul{
+    @apply bg-white  lg:border-2 border-white  lg:w-[690px] lg:h-[360px] lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:absolute lg:hidden  lg:m-2;
+}
+
+#menu-item-909:hover ul{
+    @apply block lg:grid;
+}
+
+.sub-menu > li{
+    @apply  text-gray-400 pl-7 lg:pl-0 leading-10 lg:leading-6   text-2xl lg:text-sm;
+}
+#menu-primary > li > ul > li > a{
+    @apply  text-2xl text-blue-500 lg:text-blue-500 lg:text-lg;
+}
+ #menu-btn:checked ~ .wrappernav{
+    @apply block;
+} 
+
+#menu-item-917{
+    @apply p-4 lg:p-4  lg:m-4;
+}
+#menu-item-921{
+    @apply p-4  lg:m-4 lg:p-1;
+}
+#menu-item-924{
+    @apply p-4 lg:p-2  lg:m-4;
+}
+#menu-item-929{
+    @apply p-4 lg:p-2  lg:m-4 lg:mt-0;
+}
+#menu-item-934{
+    @apply p-4  lg:m-4  lg:mt-0 lg:p-1;
+}
+#menu-item-936{
+    @apply pl-4  lg:m-4 lg:p-1;
+}
+#menu-item-937{
+    @apply pl-4 lg:p-1 lg:absolute lg:ml-[475px] lg:mt-[220px];
+} 
+
