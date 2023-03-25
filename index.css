@@ -10,6 +10,9 @@ header{
     height: 100vh;
     width: 100%;
 }
+body{
+    font-family: "Nunito sans",sans-serif;
+}
 .menu-btn{
     @apply absolute right-0 text-3xl lg:hidden;
 }
@@ -21,13 +24,13 @@ header{
 }
 #menu-primary
 {
-    @apply flex flex-col mt-[50px] gap-[50px] ml-[20px] text-2xl lg:flex-row lg:mt-2 lg:ml-0 lg:justify-center;
+    @apply flex flex-col mt-[50px] gap-[50px] ml-[20px] text-2xl lg:flex-row lg:mt-3 lg:ml-0 lg:justify-center;
 } 
 #menu-primary > li > ul{
     @apply bg-white  lg:border-2 border-white  lg:w-[690px] lg:h-[360px] lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:absolute lg:hidden  lg:m-2;
 }
 
-#menu-item-909:hover ul{
+#menu-item-909:hover > ul{
     @apply block lg:grid;
 }
 
